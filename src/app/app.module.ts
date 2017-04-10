@@ -33,11 +33,7 @@ import { RepoService } from './services/repo';
 import { SearchService } from './services/search';
 import { SeoService } from './services/seo';
 import { StateService } from './services/state';
-<<<<<<< HEAD
 import { StatusService } from './services/status';
-=======
-import { TermService } from './services/term';
->>>>>>> ok-deploymentfixes
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -50,11 +46,8 @@ const APP_PROVIDERS = [
   SearchService,
   SeoService,
   StateService,
-<<<<<<< HEAD
   StatusService
-=======
-  TermService,
->>>>>>> ok-deploymentfixes
+
 ];
 
 /**
