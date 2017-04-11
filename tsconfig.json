@@ -25,6 +25,18 @@
     "lib": [
       "dom",
       "es6"
+<<<<<<< HEAD
+=======
+    ],
+    "types": [
+      "hammerjs",
+      "jasmine",
+      "node",
+      "selenium-webdriver",
+      "source-map",
+      "uglify-js",
+      "webpack"
+>>>>>>> lk-agencies-index
     ]
   },
   "exclude": [
