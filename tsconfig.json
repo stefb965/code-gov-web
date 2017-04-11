@@ -25,8 +25,6 @@
     "lib": [
       "dom",
       "es6"
-<<<<<<< HEAD
-=======
     ],
     "types": [
       "hammerjs",
@@ -36,7 +34,6 @@
       "source-map",
       "uglify-js",
       "webpack"
->>>>>>> lk-agencies-index
     ]
   },
   "exclude": [
