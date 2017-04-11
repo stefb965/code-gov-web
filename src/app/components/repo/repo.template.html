@@ -87,6 +87,14 @@
       <ul class="usa-unstyled-list">
         <activity-list  *ngIf="repo" [eventRepo]="repo"></activity-list>
       </ul>
+      <h3>Contributors</h3>
+      <ul class="usa-unstyled-list">
+        <div class= "contributors" *ngIf="repo.events | isdefined">
+          <img [src]="repo.events[0].avatar_url" height='36' width='36'>
+        </div>
+        
+      </ul>
+      
     </div>
   </div>
 </section>
