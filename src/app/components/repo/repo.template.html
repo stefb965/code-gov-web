@@ -89,8 +89,11 @@
       </ul>
       <h3>Contributors</h3>
       <ul class="usa-unstyled-list">
-        <div class= "contributors" *ngIf="repo.contributors | isdefined">
-          <a external-link href="{{repo.contributors[0].html_url}}"> <img [src]="repo.contributors[0].avatar_url" height='36' width='36' [alt]="repo.contributors[0].login"></a>
+        <div class= "contributors" >
+          <span class="contributors" *ngFor="let contributor of repo.contributors">
+          <a external-link href="{{contributor.html_url}}"> <img [src]="contributor.avatar_url" height='36' width='36' [alt]="contributor.login"></a>
+          </span>
+          
         </div>
         
       </ul>
