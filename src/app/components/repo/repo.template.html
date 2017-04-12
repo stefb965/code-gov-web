@@ -89,8 +89,8 @@
       </ul>
       <h3>Contributors</h3>
       <ul class="usa-unstyled-list">
-        <div class= "contributors" *ngIf="repo.events | isdefined">
-          <img [src]="repo.events[0].avatar_url" height='36' width='36'>
+        <div class= "contributors" *ngIf="repo.contributors | isdefined">
+          <a external-link href="{{repo.contributors[0].html_url}}"> <img [src]="repo.contributors[0].avatar_url" height='36' width='36' [alt]="repo.contributors[0].login"></a>
         </div>
         
       </ul>
