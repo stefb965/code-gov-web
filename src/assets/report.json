@@ -1,5 +1,5 @@
 {
-  "timestamp": "Mon Mar 20 2017 18:14:19 GMT-0400 (EDT)",
+  "timestamp": "Tue Apr 25 2017 12:46:56 GMT-0400 (EDT)",
   "statuses": {
     "USDA": {
       "status": "NOT FULLY COMPLIANT: 25 WARNINGS, 25 validation errors, 25 REQUESTED ENHANCEMENTS",
@@ -1058,41 +1058,9 @@
       }
     },
     "DOS": {
-      "status": "NOT FULLY COMPLIANT: 1 ERRORS, 1 WARNINGS, 2 validation errors",
-      "issues": [
-        {
-          "repoID": "dos_department_state_information_resource_management_s_office_of_ediplomacy_bids",
-          "agency": "Department of State",
-          "organization": "Department of State, Information Resource Management's Office of eDiplomacy",
-          "project_name": "BIDS",
-          "issues": {
-            "enhancements": [],
-            "warnings": [
-              {
-                "keyword": "type",
-                "dataPath": ".exemption",
-                "schemaPath": "#/properties/exemption/type",
-                "params": {
-                  "type": "integer"
-                },
-                "message": "should be integer"
-              }
-            ],
-            "errors": [
-              {
-                "keyword": "type",
-                "dataPath": ".updated.sourceCodeLastModified",
-                "schemaPath": "#/properties/updated/properties/sourceCodeLastModified/type",
-                "params": {
-                  "type": "string"
-                },
-                "message": "should be string"
-              }
-            ]
-          }
-        }
-      ],
-      "version": "1.0.2",
+      "status": "FULLY COMPLIANT: 0 validation errors",
+      "issues": [],
+      "version": "1.0.3",
       "metadata": {
         "agency": {
           "name": "Department of State",
@@ -1101,15 +1069,15 @@
           "codeUrl": "http://state.gov/code.json",
           "requirements": {
             "agencyWidePolicy": 0.5,
-            "schemaFormat": 0.5,
-            "overallCompliance": 0.5
+            "schemaFormat": 1,
+            "overallCompliance": 0.75
           }
         }
       },
       "requirements": {
         "agencyWidePolicy": 0.5,
-        "schemaFormat": 0.5,
-        "overallCompliance": 0.5
+        "schemaFormat": 1,
+        "overallCompliance": 0.75
       }
     },
     "DOT": {
@@ -1455,7 +1423,7 @@
       }
     },
     "VA": {
-      "status": "FAILURE: ERROR WHEN FETCHING (Hostname/IP doesn't match certificate's altnames: \"Host: va.gov. is not in the cert's altnames: DNS:www.va.gov\")",
+      "status": "FAILURE: ERROR WHEN FETCHING (Unexpected token < in JSON at position 0)",
       "issues": [],
       "version": "",
       "metadata": {
@@ -5811,27 +5779,67 @@
       }
     },
     "AID": {
-      "status": "FAILURE: ERROR WHEN FETCHING (Unexpected token < in JSON at position 0)",
-      "issues": [],
-      "version": "",
+      "status": "NOT FULLY COMPLIANT: 2 WARNINGS, 2 validation errors",
+      "issues": [
+        {
+          "repoID": "aid_gmail_imap_pop_disable",
+          "agency": "Agency for International Development",
+          "project_name": "Gmail Imap Pop Disable",
+          "issues": {
+            "enhancements": [],
+            "warnings": [
+              {
+                "keyword": "format",
+                "dataPath": ".license",
+                "schemaPath": "#/properties/license/format",
+                "params": {
+                  "format": "uri"
+                },
+                "message": "should match format \"uri\""
+              }
+            ],
+            "errors": []
+          }
+        },
+        {
+          "repoID": "aid_save_gmail",
+          "agency": "Agency for International Development",
+          "project_name": "Save Gmail",
+          "issues": {
+            "enhancements": [],
+            "warnings": [
+              {
+                "keyword": "format",
+                "dataPath": ".license",
+                "schemaPath": "#/properties/license/format",
+                "params": {
+                  "format": "uri"
+                },
+                "message": "should match format \"uri\""
+              }
+            ],
+            "errors": []
+          }
+        }
+      ],
+      "version": "1.0",
       "metadata": {
         "agency": {
-          "id": 17,
           "name": "Agency for International Development",
           "acronym": "AID",
           "website": "https://usaid.gov/",
           "codeUrl": "https://usaid.gov/code.json",
           "requirements": {
             "agencyWidePolicy": 1,
-            "schemaFormat": 0,
-            "overallCompliance": 0.5
+            "schemaFormat": 0.5,
+            "overallCompliance": 0.75
           }
         }
       },
       "requirements": {
         "agencyWidePolicy": 1,
-        "schemaFormat": 0,
-        "overallCompliance": 0.5
+        "schemaFormat": 0.5,
+        "overallCompliance": 0.75
       }
     },
     "FEMA": {
