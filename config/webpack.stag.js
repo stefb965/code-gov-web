@@ -126,6 +126,7 @@ module.exports = function (env) {
        */
       // NOTE: when adding more properties make sure you include them in custom-typings.d.ts
       new DefinePlugin({
+        'API_URL': JSON.stringify(METADATA.API_URL),
         'ENV': JSON.stringify(METADATA.ENV),
         'HMR': METADATA.HMR,
         'process.env': {
