@@ -29,6 +29,7 @@ const PORT = process.env.PORT || 8080;
 
 /** Be sure to update gtmAuth for Final Deployment to WH **/
 const METADATA = webpackMerge(commonConfig({ env: ENV }).metadata, {
+
   API_URL: 'https://code-api.app.cloud.gov/api/0.1/',
   host: HOST,
   port: PORT,

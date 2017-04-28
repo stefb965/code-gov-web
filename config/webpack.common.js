@@ -30,6 +30,7 @@ module.exports = function (options) {
   isProdProper = ['production'].includes(options.env);
 
   const METADATA = {
+
     API_URL: isProd ? 'https://code-api.app.cloud.gov/api/0.1/' : 'http://localhost:3001/api/0.1/',
     title: 'Code.gov',
     baseUrl: '/',
