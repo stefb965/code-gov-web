@@ -4,6 +4,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
+import { AuthHttp, AuthConfig, AUTH_PROVIDERS, provideAuth} from 'angular2-jwt';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { Angulartics2On } from 'angulartics2';
@@ -33,12 +34,8 @@ import { RepoService } from './services/repo';
 import { SearchService } from './services/search';
 import { SeoService } from './services/seo';
 import { StateService } from './services/state';
-<<<<<<< HEAD
-import { StatusService } from './services/status';
-
-=======
 import { TermService } from './services/term';
->>>>>>> ok-search-plus-activity
+
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -51,12 +48,8 @@ const APP_PROVIDERS = [
   SearchService,
   SeoService,
   StateService,
-<<<<<<< HEAD
-  StatusService
+  TermService
 
-=======
-  TermService,
->>>>>>> ok-search-plus-activity
 ];
 
 /**
