@@ -12,6 +12,10 @@ export const AGENCIES = [
     name: 'Department of Commerce'
   },
   {
+  id:'DOD',
+  name: 'Department of Defense'
+  },
+  {
     id: 'ED',
     name: 'Department of Education'
   },
