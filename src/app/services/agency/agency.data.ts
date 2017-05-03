@@ -12,13 +12,34 @@ export const AGENCIES = [
     name: 'Department of Commerce'
   },
   {
+    id: 'ED',
+    name: 'Department of Education'
+  },
+  {
     id: 'DOE',
     name: 'Department of Energy'
   },
   {
+    id: 'HHS',
+    name: 'Department of Health and Human Services'
+  },
+  {
+    id: 'DHS',
+    name: 'Department of Homeland Security'
+  },
+   {
+    id: 'HUD',
+    name: 'Department of Housing and Urban Development'
+  },
+   {
     id: 'DOL',
     name: 'Department of Labor'
   },
+   {
+    id: 'DOS',
+    name: 'Department of State'
+  },
+  
   {
     id: 'TRE',
     name: 'Department of the Treasury'
@@ -47,8 +68,26 @@ export const AGENCIES = [
     id: 'NARA',
     name: 'National Archives and Records Administration'
   },
+  
+  
+   {
+    id: 'NSF',
+    name: 'National Science Foundation'
+  },
+   {
+    id: 'NRC',
+    name: 'Nuclear Regulatory Commission'
+  },
   {
     id: 'OPM',
     name: 'Office of Personnel Management'
+  },
+   {
+    id: 'SBA',
+    name: 'Small Business Administration'
+  },
+   {
+    id: 'SSA',
+    name: 'Social Security Administration'
   }
 ];
