@@ -1,5 +1,9 @@
 export const AGENCIES = [
   {
+    id: 'AID',
+    name: 'Agency for International Development'
+  },
+  {
     id: 'CFPB',
     name: 'Consumer Financial Protection Bureau'
   },
@@ -15,13 +19,14 @@ export const AGENCIES = [
   id:'DOD',
   name: 'Department of Defense'
   },
-  {
-    id: 'ED',
-    name: 'Department of Education'
-  },
+ 
   {
     id: 'DOE',
     name: 'Department of Energy'
+  },
+   {
+    id: 'ED',
+    name: 'Department of Education'
   },
   {
     id: 'HHS',
@@ -42,6 +47,10 @@ export const AGENCIES = [
    {
     id: 'DOS',
     name: 'Department of State'
+  },
+   {
+    id: 'DOT',
+    name: 'Department of Transportation'
   },
   
   {
