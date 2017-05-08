@@ -56,6 +56,13 @@ body {
       background-color: darken($brand-purple, 10);
     }
   }
+  .usa-mail-button {
+    background-color: $brand-teal;
+
+    &:hover {
+      background-color: darken($brand-teal, 10);
+    }
+  }
 }
 
 .about-actions {
@@ -159,7 +166,7 @@ body {
     }
 
     @include media($small-screen) {
-      font-size: 1.2em;
+      font-size: 1em;
       max-width: none;
     }
   }
