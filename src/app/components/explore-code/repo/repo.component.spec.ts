@@ -124,15 +124,17 @@ describe('RepoComponent', () => {
     let agency = {id: 'VA', name: 'Department of Veterans Affairs'};
     spyOn(agencyService, 'getAgency').and.returnValue(agency);
     const repository = 'http://www.github.com/foobar/';
-    let repo = createRepository(
-      {name: 'A Fake repo name to show repo',
-      repository: repository, homepage: 'http://code.gov/foobar/' });
+    let repo = createRepository({
+      name: 'A Fake repo name to show repo',
+      repository: repository,
+      homepage: 'http://code.gov/foobar/',
+      openSourceProject: 1
+    });
     spyOn(reposService, 'getJsonFile').and.returnValue(Observable.of(repo));
 
     fixture.detectChanges();
 
     let anchors = fixture.nativeElement.querySelectorAll('.usa-button');
-    // console.log('Anchors: ', anchors);
 
     // 2nd child anchor is the repository (first one is homepage)
     expect(anchors[1].href).toBe(repository);
@@ -206,8 +208,9 @@ describe('RepoComponent', () => {
 
         fixture.detectChanges();
 
-        let parent = fixture.nativeElement.querySelector('.usa-unstyled-list');
-        expect(parent.children[0]).toBeUndefined();
+        let anchors = fixture.nativeElement.querySelectorAll('.usa-unstyled-list .usa-button');
+
+        expect(anchors[0]).toBeUndefined();
       }
   ));
 
