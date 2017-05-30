@@ -143,7 +143,7 @@ describe('RepoComponent', () => {
     // 2nd child anchor is the repository (first one is homepage)
     //console.log(anchors);
     console.log("anchor 0"+ anchors[0].href);
-    console.log("anchor 1"+ anchors[1].href);
+    //console.log("anchor 1"+ anchors[1].href);
     
     
     expect(anchors[1].href).toBe(repository);
