@@ -81,8 +81,6 @@ export const AGENCIES = [
     id: 'NARA',
     name: 'National Archives and Records Administration'
   },
-  
-  
    {
     id: 'NSF',
     name: 'National Science Foundation'

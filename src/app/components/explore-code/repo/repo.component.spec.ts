@@ -118,6 +118,7 @@ describe('RepoComponent', () => {
 
 /******* Test repo.repository  ****/
 
+
   it('should display repository in template if repo.repository property is set',
     inject([AgencyService, ReposService, SeoService],
       (agencyService, reposService, seoService)  => {
@@ -131,13 +132,13 @@ describe('RepoComponent', () => {
       openSourceProject: 1,
       governmentWideReuseProject:0
       
-      
     });
     spyOn(reposService, 'getJsonFile').and.returnValue(Observable.of(repo));
 
     fixture.detectChanges();
 
     let anchors = fixture.nativeElement.querySelectorAll('.usa-button');
+    // console.log('Anchors: ', anchors);
 
     // 2nd child anchor is the repository (first one is homepage)
     //console.log(anchors);
@@ -212,8 +213,10 @@ describe('RepoComponent', () => {
     inject([AgencyService, ReposService, SeoService],
       (agencyService, reposService, seoService)  => {
         setupRepoPropertyTest(agencyService, reposService, seoService,
+
           {homepage: undefined}
           );
+
 
         fixture.detectChanges();
 
@@ -222,7 +225,6 @@ describe('RepoComponent', () => {
         
       }
   ));
-
 
   it('should NOT display repository homepage in template if repo.homepage property is null ',
     inject([AgencyService, ReposService, SeoService],
@@ -241,7 +243,9 @@ describe('RepoComponent', () => {
     inject([AgencyService, ReposService, SeoService],
       (agencyService, reposService, seoService)  => {
         setupRepoPropertyTest(agencyService, reposService, seoService,
+
           {homepage: 'http://code.gov/', openSourceProject: 1});
+
 
         fixture.detectChanges();
 
@@ -253,13 +257,6 @@ describe('RepoComponent', () => {
 
       }
   ));
-
-
-
-
-
-
-  
 
   describe('ngOnDestroy()', () => {
     it('should unsubscribe from router event subscription on destroy', () => {
@@ -280,6 +277,7 @@ interface RepoProps {
   name?: string;
   description?: string;
   homepage?: string;
+
   repository?: string;
   openSourceProject?: number;
   governmentWideReuseProject?: number;
