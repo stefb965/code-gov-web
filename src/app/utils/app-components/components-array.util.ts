@@ -29,7 +29,10 @@ import {
   OverviewInventoryComponent,
   OverviewPilotComponent,
   OverviewTrackingProgressComponent,
+  PolicyComponent,
   PolicyGuideComponent,
+  PolicyIntroductionComponent,
+  PolicyObjectivesComponent,
   PrivacyPolicyComponent,
   RepoComponent,
   ReposComponent
@@ -66,7 +69,10 @@ export const APP_COMPONENTS = [
   OverviewInventoryComponent,
   OverviewPilotComponent,
   OverviewTrackingProgressComponent,
+  PolicyComponent,
   PolicyGuideComponent,
+  PolicyIntroductionComponent,
+  PolicyObjectivesComponent,
   PrivacyPolicyComponent,
   RepoComponent,
   ReposComponent

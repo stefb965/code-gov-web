@@ -20,6 +20,9 @@ import {
   OverviewInventoryComponent,
   OverviewPilotComponent,
   OverviewTrackingProgressComponent,
+  PolicyComponent,
+  PolicyIntroductionComponent,
+  PolicyObjectivesComponent
   PolicyGuideComponent
 } from '../../utils/app-components';
 import { DataResolver } from '../../app.resolver';
@@ -103,6 +106,15 @@ export const POLICY_GUIDE_ROUTES: Routes = [
               }
             ]
           }
+        ]
+     },
+     {
+        path: 'policy',
+        component: PolicyComponent,
+        children: [
+          { path: '', redirectTo: 'introduction'},
+          { path: 'introduction', component: PolicyIntroductionComponent },
+          { path: 'objectives', component: PolicyObjectivesComponent },
         ]
      }
     ]

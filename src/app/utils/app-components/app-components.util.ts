@@ -34,4 +34,7 @@ export * from '../../components/policy-guide/docs/overview';
 export * from '../../components/policy-guide/docs/overview/overview-inventory';
 export * from '../../components/policy-guide/docs/overview/overview-pilot';
 export * from '../../components/policy-guide/docs/overview/overview-tracking-progress';
+export * from '../../components/policy-guide/policy';
+export * from '../../components/policy-guide/policy/policy-introduction';
+export * from '../../components/policy-guide/policy/policy-objectives';
 
