@@ -26,6 +26,10 @@ import {
   PolicyScopeComponent,
   PolicySolutionsAnalysisComponent,
   PolicyCodeReuseComponent,
+  PolicyOpenSourceComponent,
+  PolicyExceptionsComponent, 
+  PolicyImplementationComponent,
+  PolicyAppendixComponent,
   PolicyGuideComponent
 } from '../../utils/app-components';
 import { DataResolver } from '../../app.resolver';
@@ -121,6 +125,10 @@ export const POLICY_GUIDE_ROUTES: Routes = [
           { path: 'scope', component: PolicyScopeComponent },
           { path: 'solutions-analysis', component: PolicySolutionsAnalysisComponent },
           { path: 'code-reuse', component: PolicyCodeReuseComponent },
+          { path: 'open-source', component: PolicyOpenSourceComponent },
+          { path: 'exceptions', component: PolicyExceptionsComponent },
+          { path: 'implementation', component: PolicyImplementationComponent },
+          { path: 'appendix', component: PolicyAppendixComponent },
         ]
      }
     ]
