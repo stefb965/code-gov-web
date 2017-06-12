@@ -22,7 +22,10 @@ import {
   OverviewTrackingProgressComponent,
   PolicyComponent,
   PolicyIntroductionComponent,
-  PolicyObjectivesComponent
+  PolicyObjectivesComponent,
+  PolicyScopeComponent,
+  PolicySolutionsAnalysisComponent,
+  PolicyCodeReuseComponent,
   PolicyGuideComponent
 } from '../../utils/app-components';
 import { DataResolver } from '../../app.resolver';
@@ -115,6 +118,9 @@ export const POLICY_GUIDE_ROUTES: Routes = [
           { path: '', redirectTo: 'introduction'},
           { path: 'introduction', component: PolicyIntroductionComponent },
           { path: 'objectives', component: PolicyObjectivesComponent },
+          { path: 'scope', component: PolicyScopeComponent },
+          { path: 'solutions-analysis', component: PolicySolutionsAnalysisComponent },
+          { path: 'code-reuse', component: PolicyCodeReuseComponent },
         ]
      }
     ]
