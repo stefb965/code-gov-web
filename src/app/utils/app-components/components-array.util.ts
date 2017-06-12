@@ -37,7 +37,7 @@ import {
   PolicySolutionsAnalysisComponent,
   PolicyCodeReuseComponent,
   PolicyOpenSourceComponent,
-  PolicyExceptionsComponent, 
+  PolicyExceptionsComponent,
   PolicyImplementationComponent,
   PolicyAppendixComponent,
   PrivacyPolicyComponent,
@@ -84,10 +84,10 @@ export const APP_COMPONENTS = [
   PolicySolutionsAnalysisComponent,
   PolicyCodeReuseComponent,
   PolicyOpenSourceComponent,
-  PolicyExceptionsComponent, 
+  PolicyExceptionsComponent,
   PolicyImplementationComponent,
   PolicyAppendixComponent,
   PrivacyPolicyComponent,
   RepoComponent,
   ReposComponent
-]
+];
