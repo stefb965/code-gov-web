@@ -10,7 +10,9 @@ import { MobileService } from '../../../services/mobile';
 
 export class AgenciesComponent {
 
-  constructor(private mobileService: MobileService) {
+  constructor(
+    private mobileService: MobileService
+  ) {
     this.mobileService.hideMenu();
   }
 }
