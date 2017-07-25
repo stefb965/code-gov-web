@@ -7,7 +7,6 @@
     "version":{
       "type":"string",
       "description": "The version of the metadata schema in use. For example '1.0.2'."
-"
     },
     "agency":{
       "type":"string",
