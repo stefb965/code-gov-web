@@ -1,19 +1,22 @@
 {
-    "version":"1.0.2",
+    "version":"2.0.0",
     "agency": "DOABC",
-    "projects": [
+    "releases": [
         {
             "name": "mygov",
             "organization": "XYZ Department",
             "description": "A Platform for Connecting People and Government",
-            "license": {
+            "licenses": [{
               "URL": "https://path.to/license",
               "name": "CC0"
           
+            }],
+            "permissions":{
+              "usageType":"open",
+              "exemptionText": null
             },
-            "openSourceProject": true,
-            "governmentWideReuseProject": false,
-
+          
+          
             "tags": [
               "platform",
               "government",
@@ -21,7 +24,7 @@
               "people"
             ],
             "contact": {
-              "email": "project@agency.gov",
+              "email": "release@agency.gov",
               "name": "Project Coordinator Name",
               "URL": "https://twitter.com/projectname",
               "phone": "2025551313"
@@ -35,16 +38,15 @@
               "java",
               "python"
             ],
-            "costSavings": "1000.00",
-            "openSourceMeasureType": "lines of code",
+            "laborHours": "1000",
+            "measurementType": "linesOfcode",
             "partners": [
                 {
                     "name": "DOXYZ",
-                    "email": "project@doxyz.gov"
+                    "email": "releaseContact1@doxyz.gov"
                 }
             ],
-            "exemption": null,
-            "exemptionText": "No exemption requested",
+            
             "date": {
                 "created": "2016-04-12",
                 "lastModified": "2016-04-12",
