@@ -51,7 +51,7 @@
                                      "enum": ["open","governmentWideReuse","exemptByLaw", "exemptByNationalSecurity", "exemptByAgencySystem","exemptByAgencyMission", "exemptByCIO"
 ]},
                         "exemptionText":{"type":[null,"string"],
-                                        "description": "If an exemption is listed in the 'usageType' field, this field should include a one- or two- sentence explanation for the exemption requested."}
+                                        "description": "If an exemption is listed in the 'usageType' field, this field should include a one- or two- sentence justification for any exemption used."}
                      }
                       }
         ,
