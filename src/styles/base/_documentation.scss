@@ -15,7 +15,6 @@
 
   a {
     color: $brand-teal-dark;
-    text-decoration: none;
 
     &:hover {
       color: $brand-teal;
@@ -55,7 +54,7 @@ h4 .compliant {
 
 
 h4 .partial {
-  color: $color-gold;
+  color: $color-gold-dark;
   text-decoration: underline;
 }
 
