@@ -48,3 +48,6 @@ export * from '../../components/policy-guide/policy/policy-open-source';
 export * from '../../components/policy-guide/policy/policy-exceptions';
 export * from '../../components/policy-guide/policy/policy-implementation';
 export * from '../../components/policy-guide/policy/policy-appendix';
+
+export * from '../../components/tools';
+export * from '../../components/tools/schema-validator';

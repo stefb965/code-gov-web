@@ -46,7 +46,9 @@ import {
   RepoComponent,
   ReposComponent,
   SidebarComponent,
-  SubnavComponent
+  SubnavComponent,
+  ToolsComponent,
+  SchemaValidatorComponent
 } from './app-components.util';
 
 export const APP_COMPONENTS = [
@@ -97,5 +99,7 @@ export const APP_COMPONENTS = [
   RepoComponent,
   ReposComponent,
   SidebarComponent,
-  SubnavComponent
+  SubnavComponent,
+  ToolsComponent,
+  SchemaValidatorComponent
 ];
