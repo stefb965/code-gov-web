@@ -1,5 +1,6 @@
 {
     "version":"2.0.0",
+    "measurementType": "linesOfcode",
     "agency": "DOABC",
     "releases": [
         {
@@ -31,7 +32,7 @@
             },
             "status": "Alpha",
             "vcs": "git",
-            "repositoryURL": "https://github.com/presidential-innovation-fellows/mygov",
+            "repositoryURL": "https://github.com/presidential-innovation-fellows/code-gov-web",
             "homepageURL": "https://agency.gov/project-homepage",
             "downloadURL": "https://agency.gov/project/dist.tar.gz",
             "languages": [
@@ -39,7 +40,23 @@
               "python"
             ],
             "laborHours": "1000",
-            "measurementType": "linesOfcode",
+            "reusedSourceCode": [
+              {
+                "codeName":"Code.gov Web",
+                "codeURL":"https://github.com/presidential-innovation-fellows/code-gov-web",
+                "hoursToAdopt":"3.5",
+                "isGovernmentRepo":true
+              },
+                 {
+                "codeName":"Code.gov API",
+                "codeURL":"https://github.com/presidential-innovation-fellows/code-gov-api",
+                "hoursToAdopt":"1",
+                "isGovernmentRepo":true
+              }
+              
+              
+            ]
+            
             "partners": [
                 {
                     "name": "DOXYZ",
