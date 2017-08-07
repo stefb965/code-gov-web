@@ -6,7 +6,7 @@
   "properties": {
     "version": {
       "type": "string",
-      "description": "The version of the metadata schema in use. Obeys Sematic Versioning 2.0.0 rules as defined at http://semver.org"
+      "description": "The version of the metadata schema in use. Implements semantic versioning 2.0.0 rules as defined at http://semver.org"
     },
     "measurementType": {
             "type": "object",
@@ -21,7 +21,7 @@
                   "systems",
                   "other"
                 ],
-                "description": "An enumerated list of different methods for measuring the open source requurement."
+                "description": "An enumerated list of methods for measuring the open source requirement."
               },
               "ifOther": {
                 "type": "string",
@@ -45,7 +45,7 @@
           },
           "organization": {
             "type": "string",
-            "description": "The organization within the agency that the releases listed belong to. For example, '18F' or 'Navy'."
+            "description": "The organization within the agency to which the releases listed belong. For example, '18F' or 'Navy'."
           },
           "description": {
             "type": "string",
@@ -63,7 +63,7 @@
                 },
                 "name": {
                   "type": "string",
-                  "description": "an abbreviation for the name of the type license. For example, 'CC0' or 'MIT'."
+                  "description": "An abbreviation for the name of the type license. For example, 'CC0' or 'MIT'."
                 }
               }
             }
@@ -114,7 +114,7 @@
               "URL": {
                 "type": "string",
                 "format": "uri",
-                "description": "The URL to a website that can be used reach the point of contact. For example, 'http://twitter.com/codeDotGov'"
+                "description": "The URL to a website that can be used to reach the point of contact. For example, 'http://twitter.com/codeDotGov'."
               },
               "phone": {
                 "type": "string",
@@ -172,9 +172,9 @@
             "type": "number",
             "description": "The total number of labor hours spent on the development of this release."
           },
-          "reusedSourceCode":{
+          "relatedCodebase":{
             "type": "array",
-            "description": "An array of forked, cloned, or other otherwise re-used source code repositories.",
+            "description": "An array of forked, cloned, or other otherwise reused source code repositories.",
             "items":{
               "type":"object",
               "properties":{
@@ -189,13 +189,9 @@
                   "format": "uri",
                   "description": "The URL where the code repository, project, library or release can be found."
                 },
-                "hoursToAdopt": {
-                  "type":"number",
-                  "description": "The number of labor hour spent to incorporate or adopt this code repository into the release."
-                },
-                "isGovermentRepo": {
+                                "isGovermentRepo": {
                   "type":"boolean",
-                  "description": "True or False. Is the code repository is owned or managed by a federal agency."
+                  "description": "True or False. Is the code repository owned or managed by a federal agency?"
                 }
                 
                 
@@ -248,7 +244,6 @@
           "repositoryURL",
           "description",
           "laborHours",
-          "measurementType",
           "tags",
           "contact",
           "date"
@@ -258,6 +253,7 @@
   },
   "required": [
     "version",
+    "measurementType",
     "agency",
     "releases"
   ]

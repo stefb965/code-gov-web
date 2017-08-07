@@ -40,11 +40,10 @@
               "python"
             ],
             "laborHours": "1000",
-            "reusedSourceCode": [
+            "relatedCodebase": [
               {
                 "codeName":"Code.gov Web",
                 "codeURL":"https://github.com/presidential-innovation-fellows/code-gov-web",
-                "hoursToAdopt":"3.5",
                 "isGovernmentRepo":true
               },
                  {
