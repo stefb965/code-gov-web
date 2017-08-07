@@ -1,4 +1,4 @@
-import { NgModule, ApplicationRef } from '@angular/core';
+import { NgModule, ApplicationRef, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -12,6 +12,8 @@ import { Angulartics2Module, Angulartics2GoogleTagManager } from 'angulartics2';
 
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
 import { Ng2SimplePageScrollModule } from 'ng2-simple-page-scroll';
+
+import { MetaModule } from '@ngx-meta/core';
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -60,7 +62,8 @@ const APP_PROVIDERS = [
     HttpModule,
     RouterModule.forRoot(ROUTES, { useHash: true }),
     Ng2PageScrollModule.forRoot(),
-    Ng2SimplePageScrollModule.forRoot()
+    Ng2SimplePageScrollModule.forRoot(),
+    MetaModule.forRoot()
   ],
   declarations: [
     APP_COMPONENTS,
@@ -77,7 +80,8 @@ const APP_PROVIDERS = [
     APP_PROVIDERS,
     Angulartics2GoogleTagManager
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 
 export class AppModule {
