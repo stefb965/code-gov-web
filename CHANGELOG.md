@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 'disclaimerURL' - link to disclaimer language.
 - 'laborHours' - number of hours involved in building the release.
 - 'relatedCodebase'  - array of related source code repositories. 
+- 'reusedCodebase'  - array of forked, cloded, or otherwise reused source code repositories. 
 - 'version' - added versioning to releases.
 
 ### Changed
