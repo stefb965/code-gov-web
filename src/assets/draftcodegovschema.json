@@ -170,7 +170,7 @@
           },
           "laborHours": {
             "type": "number",
-            "description": "The total number of labor hours spent on the development of this release."
+            "description": "An estimate of total labor hours spent on the development of this release that includes labor performed by federal employees and contractors."
           },
           "relatedCodebase": {
             "type": "array",
