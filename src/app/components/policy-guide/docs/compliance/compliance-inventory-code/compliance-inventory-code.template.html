@@ -137,7 +137,7 @@ Version 2.0.0 of the <a href="https://github.com/presidential-innovation-fellows
 		  		</ul>
 		  	</li>
 			<li>
-			<code>relatedCodebase</code>: [array] An array of affiliated repositories that may be a part of the same project. For example,  relatedCodebase(s) for 'code-gov-web' would include 'code-gov-api' and 'code-gov-tools'.
+			<code>relatedCode</code>: [array] An array of affiliated government repositories that may be a part of the same project. For example,  relatedCode for 'code-gov-web' would include 'code-gov-api' and 'code-gov-tools'.
 			<ul>
 				<li><code>codeName</code>: [string] The name of the code repository, project, library or release.</li>
         <li><code>codeURL</code>: [string] The URL where the code repository, project, library or release can be found.</li>
@@ -146,7 +146,7 @@ Version 2.0.0 of the <a href="https://github.com/presidential-innovation-fellows
 			</ul>
 		</li>
       <li>
-			<code>govSoftwareUse</code>: [array] An array of government source code, libraries, frameworks, APIs, platforms or other software. For example: US Web Design Standards, cloud.gov, Federalist, Digital Services Playbook, Analytics Reporter.
+			<code>reusedCode</code>: [array] An array of government source code, libraries, frameworks, APIs, platforms or other software used in this release. For example: US Web Design Standards, cloud.gov, Federalist, Digital Services Playbook, Analytics Reporter.
 			<ul>
 				<li><code>name</code>: [string] The name of the software used in this release.</li>
         <li><code>URL</code>: [string] The URL where the software can be found.</li>
@@ -190,8 +190,8 @@ Version 2.0.0 of the <a href="https://github.com/presidential-innovation-fellows
 
 <li>'laborHours' - number of hours involved in building the release.</li>
 
-<li>'relatedCodebase'  - array of related source code repositories.</li>
-<li>'govSoftwareUse'  - array of government software used in the release.</li>
+<li>'relatedCode'  - array of related source code repositories.</li>
+<li>'reusedCode'  - array of government software used in the release.</li>
 
 <li>'version'  - added versioning to releases </li>
 </ul>

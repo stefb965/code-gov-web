@@ -15,8 +15,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 'disclaimerText' - includes short, paragraph-long disclaimer language.
 - 'disclaimerURL' - link to disclaimer language.
 - 'laborHours' - number of hours involved in building the release.
-- 'relatedCodebase'  - array of related source code repositories. 
-- 'govSoftwareUse'  - array of government software used in the release. 
+- 'relatedCode'  - array of related source code repositories. 
+- 'reusedCode'  - array of government software used in the release. 
 - 'version' - added versioning to releases.
 
 ### Changed

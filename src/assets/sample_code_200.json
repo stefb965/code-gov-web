@@ -43,14 +43,14 @@
         "python"
       ],
       "laborHours": 1000,
-      "relatedCodebase": [
+      "relatedCode": [
         {
-          "codeName": "Code.gov API",
-          "codeURL": "https://github.com/presidential-innovation-fellows/code-gov-api",
-          "isGovernmentRepo": true
+          "name": "Code.gov API",
+          "URL": "https://github.com/presidential-innovation-fellows/code-gov-api"
+   
         }
       ],
-      "govSoftwareUse": [
+      "reusedCode": [
         {
           "name": "US web design standards",
           "URL": "https://github.com/18F/web-design-standards"
