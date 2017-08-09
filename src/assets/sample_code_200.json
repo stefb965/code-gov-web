@@ -10,13 +10,14 @@
       "version": "1.0.0",
       "organization": "XYZ Department",
       "description": "A Platform for Connecting People and Government",
-      "licenses": [
+      
+      "permissions": {
+        "licenses": [
         {
           "URL": "https://path.to/license",
           "name": "CC0"
         }
       ],
-      "permissions": {
         "usageType": "open",
         "exemptionText": null
       },
