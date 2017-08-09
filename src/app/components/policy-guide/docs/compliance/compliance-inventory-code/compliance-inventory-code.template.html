@@ -146,14 +146,15 @@ Version 2.0.0 of the <a href="https://github.com/presidential-innovation-fellows
 			</ul>
 		</li>
       <li>
-			<code>reusedCodebase</code>: [array] An array of forked, cloned, or otherwise reused source code repositories that have been incorporated into this release.
+			<code>govSoftwareUse</code>: [array] An array of government source code, libraries, frameworks, APIs, platforms or other software. For example: US Web Design Standards, cloud.gov, Federalist, Digital Services Playbook, Analytics Reporter.
 			<ul>
-				<li><code>codeName</code>: [string] The name of the reused code repository.</li>
-        <li><code>codeURL</code>: [string] The URL where the code repository, library or release can be found.</li>
-				<li><code>isGovernmentRepo</code>: [boolean] True or False. Is the code repository owned or managed by a federal agency?</li>
+				<li><code>name</code>: [string] The name of the software used in this release.</li>
+        <li><code>URL</code>: [string] The URL where the software can be found.</li>
+				
 				
 			</ul>
 		</li>
+      
 			<li><code>date</code>: [object] A date object describing the release.
 				<ul>
 					<li><code>created</code>: [string] The date the release was created, in YYYY-MM-DD or ISO 8601 format.</li>
@@ -190,7 +191,7 @@ Version 2.0.0 of the <a href="https://github.com/presidential-innovation-fellows
 <li>'laborHours' - number of hours involved in building the release</li>
 
 <li>'relatedCodebase'  - array of related source code repositories </li>
-<li>'reusedCodebase'  - array of forked, cloned, or otherwise reused source code repositories.</li>
+<li>'govSoftwareUse'  - array of government software used in the release.</li>
 
 <li>'version'  - added versioning to releases </li>
 </ul>
