@@ -103,6 +103,9 @@ export class ComplianceDashboardComponent implements OnInit, OnDestroy {
               this.updated = result.timestamp;
 
             }
+            
+        
+            
           }
         } else {
           console.log('Error.');

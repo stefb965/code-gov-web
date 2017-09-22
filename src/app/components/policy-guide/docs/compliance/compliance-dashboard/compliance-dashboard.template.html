@@ -36,6 +36,20 @@
                 <span *ngIf="requirement.status=='noncompliant'">Agency policy has not been reviewed for consistency with the Source Code Policy</span>
             </div>
           </div>
+          <div *ngIf="requirement.text=='openSourceRequirement'">
+            <div class="requirement {{requirement.status}} ">
+                <span *ngIf="requirement.status=='compliant'">Agency is compliant with the 20% open source requirement.</span>
+                <span *ngIf="requirement.status=='partial'">Agency is partially compliant with the 20% open source requirement.</span>
+                <span *ngIf="requirement.status=='noncompliant'">Agency is not in compliance with the 20% open source requirement.</span>
+            </div>
+          </div>
+          <div *ngIf="requirement.text=='inventoryRequirement'">
+            <div class="requirement {{requirement.status}} ">
+                <span *ngIf="requirement.status=='compliant'">Agency's enterprise code inventory is complete.</span>
+                <span *ngIf="requirement.status=='partial'">Agency's enterprise code inventory is partially complete.</span>
+                <span *ngIf="requirement.status=='noncompliant'">Agency does not have an enterprise code inventory.</span>
+            </div>
+          </div>
           <div *ngIf="requirement.text=='schemaFormat'">
             <div class="requirement {{requirement.status}} ">
                 <span *ngIf="requirement.status=='compliant'">
