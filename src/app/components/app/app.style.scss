@@ -134,6 +134,14 @@
 
 .usa-disclaimer {
   height: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+
+  @media screen and (min-width: $small-screen) {
+    position: relative;
+  }
 
   a {
     color: $brand-blue;

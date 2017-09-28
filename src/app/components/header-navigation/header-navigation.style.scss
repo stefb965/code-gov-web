@@ -10,6 +10,27 @@
   vertical-align: top;
 }
 
+.app-navigation {
+  background-color: $color-white;
+  padding: 0;
+  position: fixed;
+  top: 23px;
+  width: 100%;
+  z-index: 2;
+
+  @media screen and (min-width: $small-screen) {
+    position: relative;
+  }
+}
+
+.app-links {
+  display: none;
+
+  @media screen and (min-width: $small-screen) {
+    display: block;
+  }
+}
+
 .dropdown > a {
   border-bottom: 3px solid transparent;
 }

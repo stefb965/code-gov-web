@@ -1,0 +1,37 @@
+@import "../../../styles/base/all";
+
+.mobile-menu {
+  background-color: $brand-blue-gray-dark;
+  bottom: 0;
+  font-size: 1.3em;
+  position: fixed;
+  top: 67px;
+  transition: 0.5s all ease;
+  transform: translateX(-251px);
+  width: 250px;
+  z-index: 1;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  .form-control {
+    width: 100%;
+  }
+}
+
+.mobile-menu .link {
+  color: $color-white;
+  line-height: 2;
+}
+
+.mobile-menu-items {
+  float: left;
+}
+
+.mobile-menu-item {
+  border-bottom: 1px solid $color-cool-blue-light;
+  float: left;
+  padding: 1rem;
+  width: 100%;
+}

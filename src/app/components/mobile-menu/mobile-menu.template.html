@@ -1,0 +1,24 @@
+<div class="mobile-menu" [ngClass]="{open: isOpen}">
+  <ul class="mobile-menu-items usa-unstyled-list">
+    <li class="mobile-menu-item">
+      <form
+          class="search-form"
+          (ngSubmit)="handleFormSubmission()">
+        <search-input
+            name="searchQuery"
+            [(queryValue)]="queryValue"
+            ngDefaultControl>
+        </search-input>
+      </form>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="link" href="#">Browse Projects</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="link" href="#">Policy Info</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="link" href="#">Join Mailing List</a>
+    </li>
+  </ul>
+</div>
