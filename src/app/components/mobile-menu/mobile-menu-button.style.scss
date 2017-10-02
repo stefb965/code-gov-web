@@ -1,13 +1,17 @@
 @import "../../../styles/base/all";
 
 .mobile-menu-button {
-  background-color: $color-white;
+  background-color: transparent;
   border-radius: 4px;
   float: left;
   height: 44px;
   padding: 0;
   position: relative;
   width: 44px;
+
+  @media screen and (min-width: $small-screen) {
+    display: none;
+  }
 }
 
 .mobile-menu-button-line {

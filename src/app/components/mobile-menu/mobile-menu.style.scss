@@ -11,6 +11,10 @@
   width: 250px;
   z-index: 1;
 
+  @media screen and (min-width: $small-screen) {
+    display: none;
+  }
+
   &.open {
     transform: translateX(0);
   }

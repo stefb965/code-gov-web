@@ -2,6 +2,9 @@ import {
   Component,
 } from '@angular/core';
 import {
+  Router,
+} from '@angular/router';
+import {
   Subscription,
 } from 'rxjs';
 
@@ -18,9 +21,12 @@ import { MobileService } from '../../services/mobile';
 export class MobileMenuComponent {
   private isOpen: boolean = false;
   private sideNavSubscription: Subscription;
-  private queryValue: string = '';
+  private searchQuery: string = '';
 
-  constructor(private mobileService: MobileService) {
+  constructor(
+    private mobileService: MobileService,
+    private router: Router,
+  ) {
     this.sideNavSubscription = this.mobileService.activeSideNav$.subscribe(isOpen => this.isOpen = isOpen);
   }
 
@@ -28,7 +34,12 @@ export class MobileMenuComponent {
     this.sideNavSubscription.unsubscribe();
   }
 
-  handleFormSubmission() {
-
+  /**
+   * Navigate to the search results page.
+   *
+   * @return {void}
+   */
+  search() {
+    this.router.navigateByUrl('/search?q=' + this.searchQuery);
   }
 }

@@ -3,22 +3,22 @@
     <li class="mobile-menu-item">
       <form
           class="search-form"
-          (ngSubmit)="handleFormSubmission()">
+          (ngSubmit)="search()">
         <search-input
             name="searchQuery"
-            [(queryValue)]="queryValue"
+            [(queryValue)]="searchQuery"
             ngDefaultControl>
         </search-input>
       </form>
     </li>
     <li class="mobile-menu-item">
-      <a class="link" href="#">Browse Projects</a>
+      <a class="link" routerLink="/explore-code">Browse Projects</a>
     </li>
     <li class="mobile-menu-item">
-      <a class="link" href="#">Policy Info</a>
+      <a class="link" routerLink="/policy-guide">Policy Info</a>
     </li>
     <li class="mobile-menu-item">
-      <a class="link" href="#">Join Mailing List</a>
+      <a class="link" href="https://bit.ly/2pnRlYN" rel="noopener">Join Mailing List</a>
     </li>
   </ul>
 </div>

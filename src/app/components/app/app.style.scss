@@ -1,5 +1,13 @@
 @import '../../../styles/base/all';
 
+.app-container {
+  margin-top: 67px;
+
+  @media screen and (min-width: $small-screen) {
+    margin-top: 0;
+  }
+}
+
 .block--dark {
   .app-logo {
     .cls-1 {
@@ -51,8 +59,12 @@
 }
 
 .app-logo {
-  float: left;
+  margin: 0 auto;
   width: 6em;
+
+  @media screen and (min-width: $small-screen) {
+    float: left;
+  }
 
   a {
     display: block;
