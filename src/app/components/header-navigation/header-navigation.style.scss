@@ -11,19 +11,23 @@
 }
 
 .app-navigation {
-  // background-color: $color-white;
-  box-shadow: 0 0px 10px 0px;
+  box-shadow: 0 0 0 0;
   padding: 0;
   position: fixed;
   top: 23px;
+  transition: 0.5s box-shadow;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 
   @media screen and (min-width: $small-screen) {
     box-shadow: none;
     padding: 1.5rem 0;
     position: relative;
     top: 0;
+  }
+
+  &.not-at-top {
+    box-shadow: 0 0 10px 0 $color-black;
   }
 }
 

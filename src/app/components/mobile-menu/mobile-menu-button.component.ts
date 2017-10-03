@@ -1,5 +1,6 @@
 import {
   Component,
+  ViewEncapsulation,
 } from '@angular/core';
 
 import { MobileService } from '../../services/mobile';
@@ -10,6 +11,7 @@ import { MobileService } from '../../services/mobile';
     require('./mobile-menu-button.style.scss'),
   ],
   template: require('./mobile-menu-button.template.html'),
+  encapsulation: ViewEncapsulation.None,
 })
 
 export class MobileMenuButtonComponent {

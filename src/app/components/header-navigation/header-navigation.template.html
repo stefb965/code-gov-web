@@ -1,4 +1,4 @@
-<nav class="app-navigation block block--white">
+<nav class="app-navigation block block--white" [ngClass]="{'not-at-top': !isAtTop}">
   <div class="usa-grid">
     <mobile-menu-button></mobile-menu-button>
     <div class="app-logo">

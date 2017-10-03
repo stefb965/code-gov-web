@@ -39,7 +39,7 @@ export class MobileService {
   }
 
   hideSideNav() {
-    this.sideNavActive = true;
+    this.sideNavActive = false;
     this.sideNavActiveSource.next(this.sideNavActive);
   }
 

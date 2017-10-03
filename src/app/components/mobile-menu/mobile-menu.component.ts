@@ -40,6 +40,11 @@ export class MobileMenuComponent {
    * @return {void}
    */
   search() {
+    this.mobileService.hideSideNav();
     this.router.navigateByUrl('/search?q=' + this.searchQuery);
+  }
+
+  hideSideNav() {
+    this.mobileService.hideSideNav();
   }
 }

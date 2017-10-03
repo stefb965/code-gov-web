@@ -100,30 +100,6 @@
   }
 
   .search-form {
-    i {
-      display: block;
-      font-size: 1.5em;
-      left: 1rem;
-      line-height: 36px;
-      position: absolute;
-
-      @media screen and (min-width: $small-screen) {
-        line-height: 40px;
-      }
-    }
-
-    input {
-      border-color: $color-gray-lighter;
-      border-radius: 4px;
-      font-size: 1em;
-      height: auto;
-      padding-bottom: 1rem;
-      padding-left: 4rem;
-      padding-right: 1rem;
-      padding-top: 1rem;
-      width: 100%;
-    }
-
     .autocomplete-container {
       right: 0;
       width: 180%;
@@ -149,7 +125,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 4;
 
   @media screen and (min-width: $small-screen) {
     position: relative;

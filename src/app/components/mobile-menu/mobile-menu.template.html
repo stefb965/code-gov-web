@@ -12,13 +12,14 @@
       </form>
     </li>
     <li class="mobile-menu-item">
-      <a class="link" routerLink="/explore-code">Browse Projects</a>
+      <a class="link" routerLink="/explore-code" (click)="hideSideNav()">Browse Projects</a>
     </li>
     <li class="mobile-menu-item">
-      <a class="link" routerLink="/policy-guide">Policy Info</a>
+      <a class="link" routerLink="/policy-guide" (click)="hideSideNav()">Policy Info</a>
     </li>
     <li class="mobile-menu-item">
       <a class="link" href="https://bit.ly/2pnRlYN" rel="noopener">Join Mailing List</a>
     </li>
   </ul>
 </div>
+<div class="mobile-menu-underlay" [ngClass]="{'active': isOpen}" (click)="hideSideNav()"></div>
